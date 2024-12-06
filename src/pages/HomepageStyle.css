@@ -722,7 +722,7 @@
 
 
 .skyanimation  {
-    background-image: url('/pexel-background.jpeg');
+    background-image: url('https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg');
   background-size:cover;
         -webkit-animation: slidein 100s;
         animation: slidein 100s;
