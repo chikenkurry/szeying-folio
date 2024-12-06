@@ -124,7 +124,7 @@ export default function Homepage() {
   return (
     <div className="scroll-container" style={{ width: "100%", padding: 0, margin: 0, minWidth: "390px" }}>
       <AnimatePresence>
-      <motion.section className="section-container scroll-section" 
+      <motion.section className="section-container scroll-section animated-blue-background" 
       
        >
         <div
@@ -137,12 +137,12 @@ export default function Homepage() {
             animate="visible"
             
           >
-            <motion.h1 style={{ fontSize: "2.8rem" }}  variants={textChildVariant}>Hello world, my name is</motion.h1>
-            <motion.h1 style={styles.specialText} variants={textChildVariant} >Cledwyn</motion.h1>
+            <motion.h1 style={{ fontSize: "2.8rem" }}  variants={textChildVariant}>Hello everyone, my name is</motion.h1>
+            <motion.h1 style={styles.specialText3} variants={textChildVariant} >Sze Ying</motion.h1>
             <motion.h1 style={{ fontSize: "1.8rem", paddingTop: "20px" }}  variants={textChildVariant}>
-              I am pursuing Computer Science (AI) with <br></br> a second major
-              in Business Analytics
+              Currently Pursuing MSc in Economics in SMU <br></br> BSc (Hons) in Business Marketing
             </motion.h1>
+            <motion.button onClick={() => window.location.href = '#about'} style={{width:"30%", minWidth:"150px",height:"20%", minHeight:"60px",marginTop:"5%", borderRadius:"40px", border:"none", backgroundColor:"white"}}> About Me</motion.button>
           </motion.div>
         </div>
         <div
@@ -156,14 +156,18 @@ export default function Homepage() {
           }}
         >
           <motion.img
-            src="./me1.jpg"
+            src="./szeying.jpg"
             className="img-fluid"
             style={{
-              width: "80%",
-              height: "80%",
+              width: "100%",
+              height: "auto",
+              maxWidth: "450px",
+              maxHeight: "450px",
+             
               objectFit: "cover",
-              borderRadius: "50px",
+              borderRadius: "50%",
               marginBottom: "3%",
+              border: "5px solid rgba(135,206,235,1)",
             }}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -184,40 +188,72 @@ export default function Homepage() {
       <motion.section
        
         id="about"
-        className="section-container scroll1-section"
+        className="about-section-container scroll1-section animated-background-star"
         style={{
           scrollMarginTop: "30px",
           position: "relative",
         }}
       >
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-            zIndex: -1,
-            filter: "brightness(0.8)",
-            pointerEvents: "none",
-          }}
-        >
-          <source src="./vid1.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <div class="stars">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+        </div>
+        
         <div
           style={{
             width: "100%",
             textAlign: "center",
-            paddingTop: "10%",
           }}
         >
-          <h1 style={styles.specialText2}>About Me</h1>
+          <h1 style={styles.specialText4}>About Me</h1>
         </div>
         <div
           className="about-container"
@@ -229,7 +265,7 @@ export default function Homepage() {
             }}
             initial="hidden"
           >
-            <motion.div className="card" style={styles.card}>
+            <motion.div className="card" style={{...styles.card, width:"100%", marginBottom:"0"}}>
               <div
                 className="card-body"
                 style={{ marginBottom: "50px", paddingTop: "40px" }}
@@ -241,19 +277,12 @@ export default function Homepage() {
                 </div>
                 <div style={{ textAlign: "left" }}>
                   <p className="card-text" style={{ fontSize: "1.2rem" }}>
-                    I am passionate about artificial intelligence and software
-                    development, inspired by technology’s potential to transform
-                    lives and industries. I enjoy tackling challenges like
-                    designing intuitive interfaces, building scalable systems,
-                    and addressing AI’s ethical implications. My curiosity
-                    drives continuous learning as I explore emerging trends and
-                    tools. With a creative, problem-solving mindset, I aim to
-                    build impactful, innovative solutions in this dynamic field.
+                    I am a hardworking and driven individual with a deep passion for business and economics. My fascination lies in understanding how economic principles shape global markets, drive decision-making, and influence societal progress. This passion has inspired me to pursue a Master’s degree in Economics, as I am eager to deepen my knowledge and develop advanced analytical skills. I aspire to use this expertise to tackle complex economic challenges, contribute to impactful policy-making, and drive meaningful change in the business world.
                   </p>
                 </div>
               </div>
             </motion.div>
-            <motion.div className="card" style={styles.card}>
+            <motion.div className="card" style={{...styles.card, width:"100%", marginBottom:"0"}}>
               <div
                 className="card-body"
                 style={{ marginBottom: "50px", paddingTop: "40px" }}
@@ -265,15 +294,12 @@ export default function Homepage() {
                 </div>
                 <div style={{ textAlign: "left" }}>
                   <p className="card-text" style={{ fontSize: "1.2rem" }}>
-                    In my free time, I enjoy traveling, with a special love for
-                    visiting Korea and exploring its culture. I’m also an active
-                    person who loves playing football and tennis, and I have a
-                    strong passion for gymming to stay fit and energized.
+                  In my free time, I love sharing social media content featuring my adorable toy poodle, Bubble, who brings endless joy to my life. I also have a passion for traveling to Korea, where I immerse myself in the vibrant culture and explore its beauty. As a devoted fan of BTS, my idols, their music and message inspire me deeply. Additionally, I enjoy watching Formula 1 races, finding the speed, strategy, and excitement of the sport absolutely fascinating.
                   </p>
                 </div>
               </div>
             </motion.div>
-            <motion.div className="card" style={styles.card}>
+            <motion.div className="card" style={{...styles.card, width:"100%", marginBottom:"0"}}>
               <div
                 className="card-body"
                 style={{ marginBottom: "50px", paddingTop: "40px" }}
@@ -285,15 +311,12 @@ export default function Homepage() {
                 </div>
                 <div style={{ textAlign: "left" }}>
                   <p className="card-text" style={{ fontSize: "1.2rem" }}>
-                    I am currently in my sophomore year in Singapore Management
-                    University, pursing the bachelor's degree of Computer
-                    Science specialised in AI with a 2nd major in Business
-                    Analytics.
+                    I am currently pursuing a Master degree in Economics at Singapore Management University. I have a strong interest in business and economics, and I am eager to deepen my knowledge and develop advanced analytical skills. I aspire to use this expertise to tackle complex economic challenges, contribute to impactful policy-making, and drive meaningful change in the business world.
                   </p>
                 </div>
                 <div style={{ marginTop: "50px" }}>
                   <a
-                    href="https://www.linkedin.com/in/cledwyn-chan/"
+                    href="https://www.linkedin.com/in/lee-sze-ying-294160218/"
                     target="_blank"
                     className="btn btn-primary"
                   >
@@ -323,7 +346,7 @@ export default function Homepage() {
             paddingBottom: "30px",
           }}
         >
-          <h1 style={styles.specialText}>Working Experience</h1>
+          <h1 style={styles.specialText3}>Working Experience</h1>
         </div>
         <div
           className="working-container"
@@ -342,19 +365,19 @@ export default function Homepage() {
               <motion.div
                 className="card"
                 style={{ ...styles.cardContainer }}
-                onClick={() =>
-                  handleCardClick(
-                    "As a retail associate at Nike, I provided top-tier customer service, assisting customers with product selection, offering personalized recommendations, and ensuring an exceptional in-store experience. I was responsible for maintaining an organized and visually appealing sales floor, handling transactions efficiently, and staying up-to-date with product knowledge to promote the latest merchandise. My role also included contributing to sales targets, managing stock, and fostering a positive, team-oriented environment to enhance customer satisfaction and loyalty.",
-                    "./nike2.jpg"
-                  )
-                }
+                // onClick={() =>
+                //   handleCardClick(
+                //     "As a retail associate at Nike, I provided top-tier customer service, assisting customers with product selection, offering personalized recommendations, and ensuring an exceptional in-store experience. I was responsible for maintaining an organized and visually appealing sales floor, handling transactions efficiently, and staying up-to-date with product knowledge to promote the latest merchandise. My role also included contributing to sales targets, managing stock, and fostering a positive, team-oriented environment to enhance customer satisfaction and loyalty.",
+                //     "./nike2.jpg"
+                //   )
+                // }
               >
-                <img src="./nike.jpeg" style={styles.cardImg} />
+                <img src="./valueadd.jpeg" style={styles.cardImg} />
                 <div className="layer"></div>
                 <div className="info" style={{ color: "white" }}>
-                  <h3 className="heading">Nike</h3>
-                  <h4 className="sub-head">Sales Associate</h4>
-                  <h5 className="year">Mar 2023 - Sep 2023</h5>
+                  <h3 className="heading">Value Add System & Technology Pte Ltd</h3>
+                  <h4 className="sub-head">Intern</h4>
+                  <h5 className="year">June 2024 - Dec 2024</h5>
                   <p></p>
                 </div>
               </motion.div>
@@ -362,19 +385,20 @@ export default function Homepage() {
               <motion.div
                 className="card"
                 style={{ ...styles.cardContainer, minHeight: "400px" }}
-                onClick={() =>
-                  handleCardClick(
-                    "During the Artbox 2023 expo exhibition, I worked as a salesperson for Oatbedient, where I quickly adapted to the fast-paced environment and effectively engaged with visitors. My ability to grasp new information swiftly allowed me to confidently present our products and address customer inquiries. This not only enhanced the company’s visibility at the event but also earned me positive feedback from my manager, who appreciated my enthusiasm and quick learning ability. My performance contributed to a successful exhibition, showcasing my aptitude for sales and client interaction.",
-                    "./oat2.PNG"
-                  )
-                }
+                // onClick={() =>
+                //   handleCardClick(
+                //     "During the Artbox 2023 expo exhibition, I worked as a salesperson for Oatbedient, where I quickly adapted to the fast-paced environment and effectively engaged with visitors. My ability to grasp new information swiftly allowed me to confidently present our products and address customer inquiries. This not only enhanced the company’s visibility at the event but also earned me positive feedback from my manager, who appreciated my enthusiasm and quick learning ability. My performance contributed to a successful exhibition, showcasing my aptitude for sales and client interaction.",
+                //     "./oat2.PNG"
+                //   )
+                // }
               >
-                <img src="./oat.jpeg" style={{ ...styles.cardImg }} />
+                <img src="./smrt.png" style={{ ...styles.cardImg }} />
                 <div className="layer"></div>
                 <div className="info" style={{ color: "white" }}>
-                  <h3 className="heading">Oatbedient</h3>
-                  <h4 className="sub-head">Promoter</h4>
-                  <h5 className="year">Jan 2023 - Feb 2023</h5>
+                  <h3 className="heading">SMRT</h3>
+                  <h4 className="sub-head">
+                  Human Resource & Marketing staff</h4>
+                  <h5 className="year">Nov 2022 - Jan 2023</h5>
                   <p></p>
                 </div>
               </motion.div>
@@ -385,20 +409,20 @@ export default function Homepage() {
                 style={{ ...styles.cardContainer }}
                 onClick={() =>
                   handleCardClick(
-                    "Led a platoon of 15 in executing various high-stakes missions, including the National Day Parade (NDP). Additionally, played a key role in managing the networking infrastructure, ensuring seamless connectivity between critical equipment, such as establishing and maintaining reliable connections between cameras and the server.",
-                    "./army2.jpg"
+                    "Managed end-to-end recruitment and employee matters, including conducting interviews to onboard top talent and organizing company events to enhance engagement and morale.",
+                    "./smrt1.jpg"
                   )
                 }
               >
                 <img
-                  src="./army.jpeg"
+                  src="./smrt.png"
                   style={{ ...styles.cardImg, minHeight: "400px" }}
                 />
                 <div className="layer"></div>
                 <div className="info" style={{ color: "white" }}>
-                  <h3 className="heading">15C4I, SAF</h3>
-                  <h4 className="sub-head">Platoon Sergeant</h4>
-                  <h5 className="year">Oct 2021 - Nov 2022</h5>
+                  <h3 className="heading">SMRT Corporation</h3>
+                  <h4 className="sub-head">Intern</h4>
+                  <h5 className="year">May 2022 - July 2022</h5>
                   <p></p>
                 </div>
               </motion.div>
@@ -510,10 +534,36 @@ export default function Homepage() {
             </div>
             <div style={{ width: "90%", marginLeft: "5%" }}>
               <h3>Singapore Management University</h3>
-              <h5>Computer Science (AI) </h5>
-              <h6>Aug 2023 - Jun 2027</h6>
+              <h5>MSc in Economics </h5>
+              <h6>Jan 2025 - Jun 2026</h6>
             </div>
           </div>
+          <div
+            style={{
+              width: "40%",
+              minWidth: "370px",
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <div style={{ width: "40%", minWidth: "100px" }}>
+              <img
+                src="./ntu.png"
+                style={{
+                  width: "100%",
+                  minWidth: "100px",
+                  borderRadius: "150px",
+                }}
+              />
+            </div>
+            <div style={{ width: "90%", marginLeft: "5%" }}>
+              <h3>National Technological University</h3>
+              <h5>BSc (Hons) in Business Marketing </h5>
+              <h6>Aug 2021 - Jun 2024</h6>
+            </div>
+          </div>
+          
+          
           <div
             style={{
               width: "40%",
@@ -534,7 +584,7 @@ export default function Homepage() {
             </div>
             <div style={{ width: "90%", marginLeft: "5%" }}>
               <h3>Catholic Junior College</h3>
-              <h5>Student</h5>
+              <h5>GCE A Levels</h5>
               <h6>Jan 2019 - Dec 2020</h6>
             </div>
           </div>
@@ -548,7 +598,7 @@ export default function Homepage() {
           >
             <div style={{ width: "40%", minWidth: "100px" }}>
               <img
-                src="./manjuju.png"
+                src="./deyi.png"
                 style={{
                   width: "100%",
                   minWidth: "100px",
@@ -557,15 +607,15 @@ export default function Homepage() {
               />
             </div>
             <div style={{ width: "90%", marginLeft: "5%" }}>
-              <h3>Manjusri Secondary School</h3>
-              <h5>Student</h5>
+              <h3>Deyi Secondary School</h3>
+              <h5>GCE O Level</h5>
               <h6>Jan 2015 - Nov 2018</h6>
             </div>
           </div>
         </div>
       </motion.section>
 
-      <motion.section
+      {/* <motion.section
      
         id="skills"
         className="skill-section-container scroll1-section"
@@ -875,9 +925,9 @@ export default function Homepage() {
           
           
         </div>
-      </motion.section>
+      </motion.section> */}
 
-      <motion.section
+      {/* <motion.section
       
       viewport={{ once: false, amount: 0.8 }}
         id="project"
@@ -1001,7 +1051,7 @@ export default function Homepage() {
           </div>
         
   
-      </motion.section>
+      </motion.section> */}
 
       <motion.section
         id="contact"
@@ -1046,19 +1096,19 @@ export default function Homepage() {
               <h4 style={{ fontSize: "1.8rem", color: "white", fontWeight:"400" }}>
                 Want to know more about me?
               </h4>
-              <h1 style={styles.specialText3}>
+              <h1 style={styles.specialText4}>
                 Get in touch with me via these platforms!
               </h1>
               <div style={{ marginTop: "80px" }}>
                 <a
-                  href="https://www.instagram.com/cledwyn__"
+                  href="https://www.instagram.com/amaszeeyinggg/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaInstagram style={{ color: "white" }} size={80} />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/cledwyn-chan/"
+                  href="https://www.linkedin.com/in/lee-sze-ying-294160218/"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ marginLeft: "5%" }}
@@ -1066,7 +1116,7 @@ export default function Homepage() {
                   <FaLinkedin style={{ color: "white" }} size={80} />
                 </a>
                 <a
-                  href="mailto:cledwynchan@gmail.com"
+                  href="mailto:szeeyinggg@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ marginLeft: "5%" }}
@@ -1105,14 +1155,14 @@ export default function Homepage() {
               onClick={toggleMute}
             ></motion.video> */}
             <motion.img
-            src="./me22.jpeg"
+            src="./me10.JPG"
             
             style={{
               width: "70%",
               minWidth:"400px",
               height: "80%",
               objectFit: "cover",
-              borderRadius: "50px",
+              borderRadius: "100px",
               marginBottom: "3%",
             }}
             initial={{ opacity: 0, scale: 0.5 }}
@@ -1192,7 +1242,7 @@ const styles = {
 
   specialText3: {
     fontSize: "4rem",
-    backgroundImage: "url('./bg5.jpeg')",
+    backgroundImage: "url('./bg4.jpeg')",
     backgroundPosition: "top",
     backgroundClip: "text",
     color: "transparent",
