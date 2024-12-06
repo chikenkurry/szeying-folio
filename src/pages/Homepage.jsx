@@ -373,7 +373,7 @@ export default function Homepage() {
             <div id="expContainer" style={{ ...styles.display }}>
               <motion.div
                 className="card"
-                style={{ ...styles.cardContainer }}
+                style={{ ...styles.cardContainer, minHeight: "400px" }}
                 // onClick={() =>
                 //   handleCardClick(
                 //     "As a retail associate at Nike, I provided top-tier customer service, assisting customers with product selection, offering personalized recommendations, and ensuring an exceptional in-store experience. I was responsible for maintaining an organized and visually appealing sales floor, handling transactions efficiently, and staying up-to-date with product knowledge to promote the latest merchandise. My role also included contributing to sales targets, managing stock, and fostering a positive, team-oriented environment to enhance customer satisfaction and loyalty.",
@@ -521,14 +521,17 @@ export default function Homepage() {
             color: "white",
             justifyContent: "space-between",
             zIndex: "1",
+           
           }}
         >
           <div
             style={{
-              width: "40%",
+              width: "45%",
               minWidth: "370px",
               display: "flex",
               alignItems: "center",
+              paddingBottom:"10%",
+     
             }}
           >
             <div style={{ width: "40%", minWidth: "100px" }}>
@@ -541,7 +544,7 @@ export default function Homepage() {
                 }}
               />
             </div>
-            <div style={{ width: "90%", marginLeft: "5%" }}>
+            <div style={{ width: "90%", marginLeft: "5%"}}>
               <h3>Singapore Management University</h3>
               <h5>MSc in Economics </h5>
               <h6>Jan 2025 - Jun 2026</h6>
@@ -549,10 +552,11 @@ export default function Homepage() {
           </div>
           <div
             style={{
-              width: "40%",
+              width: "45%",
               minWidth: "370px",
               display: "flex",
               alignItems: "center",
+              paddingBottom:"10%"
             }}
           >
             <div style={{ width: "40%", minWidth: "100px" }}>
@@ -575,10 +579,11 @@ export default function Homepage() {
           
           <div
             style={{
-              width: "40%",
+              width: "45%",
               minWidth: "370px",
               display: "flex",
               alignItems: "center",
+              paddingBottom:"10%"
             }}
           >
             <div style={{ width: "40%", minWidth: "100px" }}>
@@ -599,10 +604,11 @@ export default function Homepage() {
           </div>
           <div
             style={{
-              width: "40%",
+              width: "45%",
               minWidth: "370px",
               display: "flex",
               alignItems: "center",
+              paddingBottom:"10%"
             }}
           >
             <div style={{ width: "40%", minWidth: "100px" }}>
