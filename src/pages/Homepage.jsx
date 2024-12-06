@@ -129,13 +129,13 @@ export default function Homepage() {
        >
         <div
           className="div-container"
-          style={{ minWidth: "300px", display: "flex", alignItems: "center" }}
+          style={{ minWidth: "300px", display: "flex", alignItems: "center", paddingTop:"5%"}}
         >
           <motion.div
             variants={textParentVariant}
             initial="hidden"
             animate="visible"
-            
+            paddingTop="5%"
           >
             <motion.h1 style={{ fontSize: "2.8rem" }}  variants={textChildVariant}>Hello everyone, my name is</motion.h1>
             <motion.h1 style={styles.specialText3} variants={textChildVariant} >Sze Ying</motion.h1>
@@ -341,7 +341,7 @@ export default function Homepage() {
       <motion.section
         
         id="experience"
-        className="working-section-container animated-background scroll-section"
+        className="working-section-container animated-background scroll2-section"
         style={{
           scrollMarginTop: "30px",
           position: "relative",

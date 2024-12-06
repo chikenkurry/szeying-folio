@@ -816,9 +816,20 @@ to {background-position: -100px 0px;background-size:2750px;}
   height: auto; /* Each section fills the viewport */
 
 }
+
+.scroll2-section {
+  scroll-snap-align: start; /* Snap to the start of each section */
+  height: 100vh; /* Each section fills the viewport */
+
+}
 @media (max-width: 859px) {
   .scroll-section {
     height: auto; /* Override for mobile */
     padding-left:5%;
+  }
+  .scroll1-section {
+   
+    height: auto; /* Each section fills the viewport */
+  
   }
 }
