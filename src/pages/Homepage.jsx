@@ -297,6 +297,15 @@ export default function Homepage() {
                   In my free time, I love sharing social media content featuring my adorable toy poodle, Bubble, who brings endless joy to my life. I also have a passion for traveling to Korea, where I immerse myself in the vibrant culture and explore its beauty. As a devoted fan of BTS, my idols, their music and message inspire me deeply. Additionally, I enjoy watching Formula 1 races, finding the speed, strategy, and excitement of the sport absolutely fascinating.
                   </p>
                 </div>
+                <div style={{ marginTop: "50px" }}>
+                  <a
+                    href="https://www.instagram.com/bubble.lee__/"
+                    target="_blank"
+                    className="btn btn-primary"
+                  >
+                    My poodle's instagram!
+                  </a>
+                </div>
               </div>
             </motion.div>
             <motion.div className="card" style={{...styles.card, width:"100%", marginBottom:"0"}}>
